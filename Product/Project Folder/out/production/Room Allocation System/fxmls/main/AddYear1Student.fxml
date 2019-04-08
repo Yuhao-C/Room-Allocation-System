@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane onKeyTyped="#keyTyped" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.main.AddYear1StudentController">
+   <children>
+      <Button fx:id="okButton" layoutX="439.0" layoutY="370.0" mnemonicParsing="false" onAction="#okClick" prefHeight="25.0" prefWidth="69.0" text="OK" AnchorPane.bottomAnchor="14.892306955551938" AnchorPane.rightAnchor="101.58461334770243" />
+      <Button fx:id="cancelButton" layoutX="523.0" layoutY="370.0" mnemonicParsing="false" onAction="#cancelClicked" prefHeight="25.0" prefWidth="69.0" text="Cancel" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="17.58461334770243" />
+      <TableView fx:id="studentTableView" onMouseClicked="#mouseClicked" prefHeight="349.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="givenNameColumn" prefWidth="125.0" text="Given Name" />
+          <TableColumn fx:id="familyNameColumn" prefWidth="125.0" text="Family Name" />
+            <TableColumn fx:id="sexColumn" prefWidth="100.0" text="Sex" />
+            <TableColumn fx:id="countryColumn" prefWidth="125.0" text="Country" />
+            <TableColumn fx:id="continentColumn" prefWidth="125.0" text="Continent" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.main.ShowUnallocatedStudentsController">
+   <children>
+      <Button fx:id="okButton" layoutX="410.0" layoutY="360.0" mnemonicParsing="false" onAction="#okClick" prefHeight="25.0" prefWidth="69.0" text="Proceed" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="120.58461334770243" />
+      <Button fx:id="cancelButton" layoutX="494.0" layoutY="360.0" mnemonicParsing="false" onAction="#cancelClick" prefHeight="25.0" prefWidth="69.0" text="Cancel" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="36.58461334770243" />
+      <TableView fx:id="studentTableView" layoutX="35.0" layoutY="48.0" prefHeight="299.0" prefWidth="529.0">
+         <columns>
+            <TableColumn fx:id="givenNameColumn" prefWidth="110.0" text="Given Name" />
+            <TableColumn fx:id="familyNameColumn" prefWidth="110.0" text="Family Name" />
+            <TableColumn fx:id="sexColumn" prefWidth="90.0" text="Sex" />
+            <TableColumn fx:id="countryColumn" prefWidth="110.0" text="Country" />
+            <TableColumn fx:id="continentColumn" prefWidth="110.0" text="Continent" />
+         </columns>
+      </TableView>
+      <Label layoutX="201.0" layoutY="14.0" prefHeight="25.0" prefWidth="197.0" text="Unallocated Students">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="ap" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.newFile.DirectoryController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="97.0" text="File name:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="117.0" text="File directory:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="47.0">
+            <font>
+                <Font />
+            </font>
+        </Label>
+        <TextField fx:id="scheduleNameInput" layoutX="100.0" layoutY="15.0" prefHeight="24.0" prefWidth="489.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="15.0" />
+        <TextField fx:id="scheduleDirectoryInput" editable="false" layoutX="100.0" layoutY="48.0" prefHeight="24.0" prefWidth="455.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="48.0" />
+        <Button fx:id="selectDirectoryButton" layoutX="563.0" layoutY="48.0" mnemonicParsing="false" onAction="#selectDirectoryClick" prefHeight="24.0" prefWidth="21.0" text="···" AnchorPane.rightAnchor="11.892306955551938" AnchorPane.topAnchor="48.0" />
+        <Button fx:id="nextButton" layoutX="429.0" layoutY="360.0" mnemonicParsing="false" onAction="#nextClick" prefHeight="25.0" prefWidth="69.0" text="Next" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="101.58461334770243" />
+        <Button fx:id="cancelButton" layoutX="513.0" layoutY="360.0" mnemonicParsing="false" onAction="#cancelClick" prefHeight="25.0" prefWidth="69.0" text="Cancel" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="17.58461334770243" />
+        <Button disable="true" layoutX="344.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Previous" AnchorPane.bottomAnchor="14.892306955551938" AnchorPane.rightAnchor="186.58461334770243" />
+        <Label fx:id="warningLabel" layoutX="23.0" layoutY="364.0" text="Please enter Schedule name and choose its directory!" textFill="RED" visible="false" AnchorPane.bottomAnchor="20.492307237252646" AnchorPane.leftAnchor="23.0" />
+    </children>
+</AnchorPane>

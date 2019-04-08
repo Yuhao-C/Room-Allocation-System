@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.configurations.UpdateRoomInfoController">
+    <children>
+        <TableView fx:id="roomTableView" layoutX="15.0" layoutY="37.0" prefHeight="350.0" prefWidth="569.0">
+            <columns>
+                <TableColumn fx:id="idColumn" editable="false" prefWidth="52.43075466156006" resizable="false" text="ID" />
+                <TableColumn fx:id="roomColumn" onEditCommit="#changeRoomCellEvent" prefWidth="149.16922760009766" resizable="false" text="Room No./Name" />
+                <TableColumn fx:id="buildingColumn" editable="false" minWidth="0.7384033203125" onEditCommit="#changeBuildingCellEvent" prefWidth="162.46153259277344" resizable="false" sortable="false" text="Building No./Name" />
+                <TableColumn fx:id="maxResidentsColumn" onEditCommit="#changeMaxCapacityEvent" prefWidth="112.984619140625" resizable="false" sortable="false" text="Max Residents" />
+                <TableColumn fx:id="sexRoomColumn" onEditCommit="#changeRoomSexEvent" prefWidth="90.83079157180384" text="Boy/Girl" />
+            </columns>
+        </TableView>
+        <Text layoutX="202.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Configuration" AnchorPane.topAnchor="6.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Button fx:id="finishButton" layoutX="265.0" layoutY="397.0" mnemonicParsing="false" onAction="#finishClick" prefHeight="25.0" prefWidth="69.0" text="Finish" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="265.58461334770243" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="251.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.main.RunningGAController">
+   <children>
+      <ProgressIndicator fx:id="progressIndicator" layoutX="134.0" layoutY="75.0" prefHeight="82.0" prefWidth="92.0" progress="1.0" />
+      <Label fx:id="label1" layoutX="52.0" layoutY="14.0" prefHeight="47.0" prefWidth="256.0" text="Room Allocation is Evolving...">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="67.0" layoutY="183.0" prefHeight="16.0" prefWidth="228.0" text="The process usually takes 1~2 minutes. " />
+      <Label fx:id="label3" layoutX="67.0" layoutY="211.0" text="Please wait and don't close the window!" />
+      <Button fx:id="okButton" disable="true" layoutX="148.0" layoutY="183.0" mnemonicParsing="false" onAction="#okClicked" prefHeight="32.0" prefWidth="65.0" text="OK" visible="false" />
+   </children>
+</AnchorPane>

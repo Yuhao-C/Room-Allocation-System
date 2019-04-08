@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="pane" prefHeight="154.0" prefWidth="264.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.view.StudentController">
+    <children>
+        <Text layoutX="20.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Boys:">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="21.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Girls:">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="20.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Number of Students:">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Text>
+        <TextField editable="false" layoutX="13.0" layoutY="9.0" opacity="0.0" prefHeight="7.0" prefWidth="14.0" style="-fx-background-color: transparent;" />
+        <TextField fx:id="totalNumTextField" alignment="CENTER_RIGHT" editable="false" layoutX="201.0" layoutY="107.0" prefHeight="24.0" prefWidth="48.0" style="-fx-background-color: transparent;" />
+        <TextField fx:id="girlNumTextField" alignment="CENTER_RIGHT" editable="false" layoutX="201.0" layoutY="67.0" prefHeight="24.0" prefWidth="48.0" style="-fx-background-color: transparent;" />
+        <TextField fx:id="boyNumTextField" alignment="CENTER_RIGHT" editable="false" layoutX="201.0" layoutY="25.0" prefHeight="24.0" prefWidth="48.0" style="-fx-background-color: transparent;" />
+    </children>
+</AnchorPane>

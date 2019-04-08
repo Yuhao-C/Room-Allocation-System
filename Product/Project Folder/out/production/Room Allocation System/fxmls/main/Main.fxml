@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.main.MainController">
+    <top>
+        <MenuBar prefHeight="0.0" prefWidth="583.0" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="fileNew" mnemonicParsing="false" onAction="#fileNewClicked" text="New..." />
+                        <MenuItem fx:id="fileOpen" mnemonicParsing="false" onAction="#fileOpenClicked" text="Open..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#exportClicked" text="Export to Excel File..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="fileQuit" mnemonicParsing="false" onAction="#fileQuitClicked" text="Quit" />
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="View">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#viewRoomClicked" text="Room Information..." />
+                  <MenuItem mnemonicParsing="false" onAction="#viewStudentClicked" text="Student Information..." />
+              </items>
+            </Menu>
+                <Menu mnemonicParsing="false" text="Configuration">
+                    <items>
+                  <Menu mnemonicParsing="false" text="Room Configuration">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#addOrDeleteClicked" text="Add/Delete Room..." />
+                        <MenuItem mnemonicParsing="false" onAction="#updateRoomInfoClicked" text="Update Room Info..." />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Student Configuration">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#year1ConfigClicked" text="Year 1 Student..." />
+                        <MenuItem mnemonicParsing="false" onAction="#year2ConfigClicked" text="Year 2 Student..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#deleteYear1Clicked" text="Delete Year 1 Student" />
+                        <MenuItem mnemonicParsing="false" onAction="#deleteYear2Clicked" text="Delete Year 2 Student" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#uploadYear1StudentClicked" text="Upload Year 1 Student..." />
+                        <MenuItem mnemonicParsing="false" onAction="#uploadYear2StudentClicked" text="Upload Year 2 Student..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#upgradeClicked" text="Year 1 -&gt; Year 2" />
+                    </items>
+                  </Menu>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#clearYear1AllocationClicked" text="Clear Year 1 Allocation" />
+                  <MenuItem mnemonicParsing="false" onAction="#clearYear2AllocationClicked" text="Clear Year 2 Allocation" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Run">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#allocateStudentClicked" text="Allocate Students" />
+               </items></Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <JFXTreeView fx:id="treeView" prefHeight="579.0" prefWidth="241.0" showRoot="false" BorderPane.alignment="CENTER" />
+    </left>
+   <center>
+      <AnchorPane prefHeight="579.0" prefWidth="479.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="roomTableView" layoutY="39.0" onMouseClicked="#mouseClicked" prefHeight="540.0" prefWidth="588.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+              <columns>
+                <TableColumn fx:id="givenNameColumn" prefWidth="200.0" text="Given Name" />
+                <TableColumn fx:id="familyNameColumn" prefWidth="200.0" text="Family Name" />
+                  <TableColumn fx:id="sexColumn" prefWidth="150.0" text="Sex" />
+                  <TableColumn fx:id="countryColumn" prefWidth="200.0" text="Country" />
+                  <TableColumn fx:id="continentColumn" prefWidth="200.0" text="Continent" />
+                  <TableColumn fx:id="yearColumn" prefWidth="100.0" text="Year" />
+              </columns>
+            </TableView>
+            <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Capacity:" wrappingWidth="120.29997253417969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="273.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beds Available:" wrappingWidth="120.29997253417969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="roomCapacityTextField" editable="false" layoutX="133.0" layoutY="8.0" prefHeight="24.0" prefWidth="25.0" />
+            <TextField fx:id="bedsAvailableTextField" editable="false" layoutX="388.0" layoutY="8.0" prefHeight="24.0" prefWidth="25.0" />
+            <Text layoutX="471.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boy/Girl:" wrappingWidth="120.29997253417969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="boyGirlTextField" editable="false" layoutX="542.0" layoutY="8.0" prefHeight="24.0" prefWidth="60.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

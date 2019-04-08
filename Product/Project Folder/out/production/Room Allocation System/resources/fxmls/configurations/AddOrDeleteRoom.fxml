@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.configurations.AddOrDeleteRoomController">
+   <children>
+      <TableView fx:id="roomTableView" layoutX="15.0" layoutY="44.0" prefHeight="302.0" prefWidth="569.0">
+         <columns>
+            <TableColumn fx:id="idColumn" editable="false" prefWidth="52.43075466156006" resizable="false" text="ID" />
+            <TableColumn fx:id="roomColumn" prefWidth="149.16922760009766" resizable="false" text="Room No./Name" />
+            <TableColumn fx:id="buildingColumn" editable="false" minWidth="0.7384033203125" prefWidth="162.46153259277344" resizable="false" sortable="false" text="Building No./Name" />
+            <TableColumn fx:id="maxResidentsColumn" prefWidth="112.984619140625" resizable="false" sortable="false" text="Max Residents" />
+            <TableColumn fx:id="sexRoomColumn" prefWidth="90.83079157180384" text="Boy/Girl" />
+         </columns>
+      </TableView>
+      <Text layoutX="202.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Configuration" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="roomTextField" layoutX="14.0" layoutY="358.0" prefHeight="24.0" prefWidth="119.0" promptText="Room No./Name" />
+      <TextField fx:id="buildingTextField" layoutX="142.0" layoutY="358.0" prefHeight="24.0" prefWidth="120.0" promptText="Building No./Name" />
+      <TextField fx:id="maxResidentsTextField" layoutX="270.0" layoutY="358.0" prefHeight="24.0" prefWidth="92.0" promptText="Max residents" />
+      <ComboBox fx:id="sexComboBox" layoutX="368.0" layoutY="357.0" prefHeight="24.0" prefWidth="86.0" />
+      <Button fx:id="addButton" layoutX="461.0" layoutY="357.0" mnemonicParsing="false" onAction="#addClick" prefHeight="25.0" prefWidth="58.0" text="Add" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="461.0" />
+      <Button fx:id="deleteButton" layoutX="526.0" layoutY="357.0" mnemonicParsing="false" onAction="#deleteClick" prefHeight="25.0" prefWidth="55.0" text="Delete" AnchorPane.bottomAnchor="54.89230695555193" AnchorPane.leftAnchor="526.0" />
+      <Button fx:id="finishButton" layoutX="511.0" layoutY="397.0" mnemonicParsing="false" onAction="#finishClick" prefHeight="25.0" prefWidth="69.0" text="Finish" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="19.58461334770243" />
+      <Button fx:id="cancelButton" layoutX="434.0" layoutY="397.0" mnemonicParsing="false" onAction="#cancelClick" prefHeight="25.0" prefWidth="69.0" text="Cancel" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="96.58461334770243" />
+   </children>
+</AnchorPane>

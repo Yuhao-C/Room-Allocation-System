@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="305.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.configurations.Year1StudentAddClickedController">
+   <children>
+      <Text layoutX="25.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Given Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Family Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sex:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Continent:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="givenNameTF" layoutX="121.0" layoutY="42.0" prefHeight="24.0" prefWidth="136.0" />
+      <TextField fx:id="familyNameTF" layoutX="121.0" layoutY="78.0" prefHeight="24.0" prefWidth="136.0" />
+      <ComboBox fx:id="sexCB" layoutX="121.0" layoutY="113.0" prefHeight="24.0" prefWidth="137.0" />
+      <ComboBox fx:id="countryCB" layoutX="121.0" layoutY="148.0" prefHeight="24.0" prefWidth="137.0" />
+      <TextField fx:id="continentTF" layoutX="121.0" layoutY="183.0" prefHeight="24.0" prefWidth="136.0" />
+      <TextField editable="false" layoutX="121.0" layoutY="217.0" prefHeight="24.0" prefWidth="136.0" text="1" />
+      <Button layoutX="110.0" layoutY="258.0" mnemonicParsing="false" onAction="#okClicked" prefHeight="26.0" prefWidth="59.0" text="OK" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.newFile.StudentConfigController">
+    <children>
+        <Text layoutX="167.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Configuration">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="162.0" fitWidth="242.0" layoutX="310.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="/SampleExcelSheet.png"/>
+            </image></ImageView>
+        <Button layoutX="107.0" layoutY="308.0" mnemonicParsing="false" onAction="#year1UploadButtonClick" prefHeight="32.0" prefWidth="141.0" text="UPLOAD (Year1)">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="previousButton" layoutX="348.0" layoutY="360.0" mnemonicParsing="false" onAction="#previousClick" prefHeight="25.0" prefWidth="69.0" text="Previous" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="182.58461334770243" />
+        <Button fx:id="cancelButton" layoutX="558.0" layoutY="407.0" mnemonicParsing="false" onAction="#cancelClick" prefHeight="25.0" prefWidth="69.0" text="Cancel" AnchorPane.bottomAnchor="14.89230695555193" AnchorPane.rightAnchor="17.58461334770243" />
+      <Button layoutX="358.0" layoutY="308.0" mnemonicParsing="false" onAction="#year2UploadButtonClick" prefHeight="32.0" prefWidth="141.0" text="UPLOAD (Year2)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextButton" disable="true" layoutX="431.0" layoutY="360.0" mnemonicParsing="false" onAction="#nextClick" prefHeight="25.0" prefWidth="69.0" text="Next" />
+      <TextArea editable="false" layoutX="50.0" layoutY="84.0" prefHeight="210.0" prefWidth="233.0" text="Step1: Enter students' first&#10;names, last names, and sexes&#10;in an empty Excel sheet, as &#10;shown in the picture.&#10;&#10;Step2: Click File -&gt; Save as&#10;-&gt; Browse. Choose CSV&#10;UTF-8 in the save type.&#10;&#10;Step3: Upload the CSV file.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>
